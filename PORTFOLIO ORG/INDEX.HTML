@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        body {
+            background-color:yellow;
+            font-family:burlywood;
+
+        }
+        header {
+            background-color:green;
+            color:black;
+            padding: 30px;
+            text-align:center;
+        }
+        nav {
+            background-color:rgb(0, 255, 64);
+            text-align:center;
+            padding:15px;
+            
+        }
+        nav a{
+            color:blue;
+            text-decoration:none;
+            font-weight:bold;
+            margin:0 15px;
+        }
+        section{
+            color:black;
+            padding:20px;
+            text-align:left;
+        }
+        .profile-image{
+            border-radius: 50%;
+            width: 200px;
+            height:100px;
+        }
+    </style>
+</head>
+<body id="start">
+    <header>
+        <h1>MY PORTFOLIO</h1><h3 id="end"></h3><a href="#end">back to down</a>
+   <H2>Name: Nicodemus Mutuku Kyalo</H2>
+   <h3>Profile photo</h3>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.KpqCrEKf55IZcpAso9Fd0AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Profile Image" width="200" height="100">
+    </header>
+   <nav>
+    <a href="#" onclick="showpage('home')">home</a>
+    <a href="#" onclick="showpage('about')">about</a>
+    <a href="#" onclick="showpage('skills')">skills</a>
+    <a href="#" onclick="showpage('education')">Education</a>
+    <a href="#" onclick="showpage('contact')">contact us</a>
+    </nav>
+    <!--home section-->
+    <section id="home">
+        <h2>Welcome to my portfolio</h2>
+        <p>Hello! my name is Nicodemus mutuku kyalo.</p>
+    <p> I am pursuing bachelor in science Information Techonology at Meru university of science and technology.</p>
+    <p>Welcome to my personal portfolio website.</p>
+    </section>
+    <!--about section-->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in creating responsive and user-friendly websites.<BR>I am planning to change the world through technological skills</p>
+    </section>
+    <section id="skills">
+    <h2>skills</h2>
+    <ul>
+<li>Hypertext Markup Language(HTML)</li><li>JavaScript</li><li>Cascading style sheets(CSS)</li><li>C programming</li>
+    </ul>
+    <h3>other skills</h3>
+    <ul><li>Graphic desing</li><li>Data analytics skills</li><li>Cybersecurity fundamentals</li><li>Data fundamentals</li><li>Computer packages training skills</li></ul>
+    </section>
+    <section id="education">
+    <h2>Education</h2>
+    <p style="color:blue">Meru University of Science and Technology
+        <ul>
+    <li>Bachelor of Science in Information Technology</li>
+    </ul>
+    </p>
+    <p style="color:red">Sigma Technical institute of Technology <br> 
+        <ul>
+    <li>Certificate in cybersecurity fundamentals</li>
+    <li>Certificate in Data fundamentals</li>
+    <li>Certificate in Data analytics training</li>
+    </ul>
+</ul>
+    </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to me through the following channels:</p>
+        <ul>
+            <li>Email: kyalonicoofx@gmail.com</li>
+            <li>Phone: +254 745 050 039 or 0143479481</li>
+            <li><a href="https://wa.me/254745050039">contact me on whatsapp </a> <br>
+    <button ><a href="https://wa.me/254745050039">vist my whatsapp account</a></button></li>
+        </ul>
+    </section>
+
+    <script>
+        function showpage(page){
+            //hide both pages
+            document.getElementById("home").style.display="none";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display="none";
+            document.getElementById("education").style.display="none";
+            document.getElementById("contact").style.display="none";
+            // show  the page clicked
+            document.getElementById(page).style.display="block";
+
+        }
+    </script> 
+      <a href="#start">back to top</a>
+</body>
+</html>
